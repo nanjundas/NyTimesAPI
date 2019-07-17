@@ -17,7 +17,17 @@ func ArticleDetailSummaryController() -> ListSingleSectionController {
         
         guard let cell = cell as? ArticleDetailSummaryCell, let article = item as? Article  else { return }
         cell.titleLabel?.text = article.title
-        cell.abstractLabel?.text = article.abstract        
+        cell.abstractLabel?.text = article.abstract
+        
+        if let urlString = article.thumbnailImagePath {
+            
+            DataManager.sharedInstance.getImage(urlString: urlString) { (image) in
+                if let image = image {
+                    cell.backdropImageView?.image = image
+                }
+            }
+        }
+
     }
     
     let sizeBlock = { (item: Any, context: ListCollectionContext?) -> CGSize in
