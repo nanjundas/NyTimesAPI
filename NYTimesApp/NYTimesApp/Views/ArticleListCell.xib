@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArticleListCell" id="JFf-A8-Gcn" customClass="ArticleListCell" customModule="NYTimesApp">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How North Korea’s Leader Gets His Luxury Cars" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aw7-EE-W6F">
+                        <rect key="frame" x="10" y="10" width="325" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="9S6-3T-TIc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65C-Q5-Rpn">
+                        <rect key="frame" x="10" y="49" width="325" height="71"/>
+                        <string key="text">Kim Jong-un parades around in Mercedes-Benzes and a Rolls-Royce, despite sanctions intended to keep North Korea from importing luxury goods. We tracked how they get there</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aw7-EE-W6F" firstAttribute="top" secondItem="JFf-A8-Gcn" secondAttribute="top" constant="10" id="1Sd-iT-LWG"/>
+                <constraint firstItem="65C-Q5-Rpn" firstAttribute="leading" secondItem="JFf-A8-Gcn" secondAttribute="leading" constant="10" id="2Yh-KE-jJl"/>
+                <constraint firstItem="aw7-EE-W6F" firstAttribute="leading" secondItem="JFf-A8-Gcn" secondAttribute="leading" constant="10" id="2qq-ms-hon"/>
+                <constraint firstItem="65C-Q5-Rpn" firstAttribute="top" secondItem="aw7-EE-W6F" secondAttribute="bottom" constant="2" id="AAp-po-VsP"/>
+                <constraint firstAttribute="bottom" secondItem="65C-Q5-Rpn" secondAttribute="bottom" constant="10" id="PtV-jp-31k"/>
+                <constraint firstAttribute="trailing" secondItem="aw7-EE-W6F" secondAttribute="trailing" constant="10" id="agO-gU-NhR"/>
+                <constraint firstAttribute="trailing" secondItem="65C-Q5-Rpn" secondAttribute="trailing" constant="10" id="jQg-qc-TjW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="loD-tL-xQn"/>
+            <size key="customSize" width="345" height="131"/>
+            <connections>
+                <outlet property="descLabel" destination="65C-Q5-Rpn" id="geL-2w-Xfh"/>
+                <outlet property="titleLabel" destination="aw7-EE-W6F" id="72w-tM-lXv"/>
+            </connections>
+            <point key="canvasLocation" x="28.260869565217394" y="153.01339285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>
