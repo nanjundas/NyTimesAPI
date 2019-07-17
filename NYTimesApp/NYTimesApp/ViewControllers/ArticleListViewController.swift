@@ -35,6 +35,7 @@ class ArticleListViewController: UIViewController {
     let spinnerObject = "spinner"
     var isLoading = false
     var data: Array<Article> = []
+    var period = "1"
     
     lazy var adapter: ListAdapter = {
         return ListAdapter(updater: ListAdapterUpdater(), viewController: self, workingRangeSize: 0)
@@ -65,14 +66,37 @@ class ArticleListViewController: UIViewController {
 
     }
 
+    @IBAction func onFilterClicked(_ sender: Any) {
+        
+        let options = UIAlertController(title: "Choose Number of Days", message: "Shows the content from past so many number of Days.", preferredStyle: .actionSheet)
+        
+        options.addAction(UIAlertAction(title: "1", style: .default, handler: { (alert: UIAlertAction!) -> Void in
+            self.period = alert.title!
+            self.refreshFeed()
+        }))
+        options.addAction(UIAlertAction(title: "7", style: .default, handler: { (alert: UIAlertAction!) -> Void in
+            self.period = alert.title!
+            self.refreshFeed()
+        }))
+        options.addAction(UIAlertAction(title: "30", style: .default, handler: { (alert: UIAlertAction!) -> Void in
+            self.period = alert.title!
+            self.refreshFeed()
+        }))
+        
+        options.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        self.present(options, animated: true, completion: nil)
+    }
 }
 
 extension ArticleListViewController {
     
     func refreshFeed(ignoreCache:Bool = false) {
         
-        DataManager.sharedInstance.getViewedArticles(period: "1", params: nil) { (status) in
+        DataManager.sharedInstance.getViewedArticles(period: period, params: nil) { (status) in
 
+            self.data.removeAll()
+            
             if status.isSuccess{
                 let items:Array<Article> = Array(status.value!)
                 self.data.append(contentsOf: items)

@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2D275152106A32F1E1CBEC24 /* Pods_NYTimesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41C8A9B800AF3A66B58DF86 /* Pods_NYTimesApp.framework */; };
 		4DC6211122DF8A3200209C09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC6211022DF8A3200209C09 /* AppDelegate.swift */; };
-		4DC6211322DF8A3200209C09 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC6211222DF8A3200209C09 /* MasterViewController.swift */; };
-		4DC6211522DF8A3200209C09 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC6211422DF8A3200209C09 /* DetailViewController.swift */; };
 		4DC6211822DF8A3200209C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC6211622DF8A3200209C09 /* Main.storyboard */; };
 		4DC6211A22DF8A3300209C09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC6211922DF8A3300209C09 /* Assets.xcassets */; };
 		4DC6211D22DF8A3300209C09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC6211B22DF8A3300209C09 /* LaunchScreen.storyboard */; };
@@ -65,8 +63,6 @@
 		41DDED0F53DE63B60F1B93A2 /* Pods-NYTimesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimesApp.release.xcconfig"; path = "Target Support Files/Pods-NYTimesApp/Pods-NYTimesApp.release.xcconfig"; sourceTree = "<group>"; };
 		4DC6210D22DF8A3200209C09 /* NYTimesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC6211022DF8A3200209C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4DC6211222DF8A3200209C09 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		4DC6211422DF8A3200209C09 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4DC6211722DF8A3200209C09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DC6211922DF8A3300209C09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DC6211C22DF8A3300209C09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -150,8 +146,6 @@
 				4DC6216122DF9E1E00209C09 /* Sections */,
 				4DC6215B22DF9CC400209C09 /* ViewControllers */,
 				4DC6211022DF8A3200209C09 /* AppDelegate.swift */,
-				4DC6211222DF8A3200209C09 /* MasterViewController.swift */,
-				4DC6211422DF8A3200209C09 /* DetailViewController.swift */,
 				4DC6211622DF8A3200209C09 /* Main.storyboard */,
 				4DC6211922DF8A3300209C09 /* Assets.xcassets */,
 				4DC6211B22DF8A3300209C09 /* LaunchScreen.storyboard */,
@@ -416,11 +410,9 @@
 				4DC6216322DF9E2F00209C09 /* LoadMoreController.swift in Sources */,
 				4DC6217022DFA9FD00209C09 /* ArticleDetailSummaryCell.swift in Sources */,
 				4DC6215E22DF9CE100209C09 /* NSObject+IGListDiffable.swift in Sources */,
-				4DC6211522DF8A3200209C09 /* DetailViewController.swift in Sources */,
 				4DC6216622DF9ECE00209C09 /* ArticleListCell.swift in Sources */,
 				4DC6216022DF9D0300209C09 /* ArticleListViewController.swift in Sources */,
 				4DC6216A22DFA12D00209C09 /* ArticleItemController.swift in Sources */,
-				4DC6211322DF8A3200209C09 /* MasterViewController.swift in Sources */,
 				4DC6211122DF8A3200209C09 /* AppDelegate.swift in Sources */,
 				4DC6216C22DFA6C700209C09 /* ArticleDetailViewController.swift in Sources */,
 			);

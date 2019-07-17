@@ -20,7 +20,13 @@
                         <color key="backgroundColor" red="0.9059746265411377" green="0.9176298975944519" blue="0.91764789819717407" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="Asq-6I-vDp"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4qr-QX-Raz"/>
+                    <navigationItem key="navigationItem" id="4qr-QX-Raz">
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="jdK-sX-fDH">
+                            <connections>
+                                <action selector="onFilterClicked:" destination="u9C-qI-K7N" id="feD-ap-ZnX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="RTP-9g-Sye" kind="show" identifier="showDetail" id="0BO-dF-LMn"/>
                     </connections>
@@ -87,4 +93,5 @@
             <point key="canvasLocation" x="644.92753623188412" y="-274.55357142857139"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
